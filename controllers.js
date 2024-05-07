@@ -13,7 +13,9 @@ const deleteFacultyMember =async (req,res)=>{
 }
 const addFacultyMember =async (req,res)=>{
     try {
+
      const userData = req.body
+     console.log(userData);
      const newD = Blog.creat(userData)
      res.statuse(200).json()
     } catch (error) {

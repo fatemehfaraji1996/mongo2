@@ -1,9 +1,10 @@
-const { Schema, model } = require("mongoose");
-const BlogSchema = new Schema({
+const mongoose= require("mongoose");
+const BlogSchema = new mongoose.Schema({
     name:'String',
     age: 'Number',
     exp:'Number',
     type:'String',
     qualification:'String'
 })
-const model = ('Blog',BlogSchema)
+const Blog=  mongoose.model('Blog',BlogSchema)
+module.exports = { Blog };

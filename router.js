@@ -4,7 +4,8 @@ getAllFacultyMembers,
 addFacultyMember,
 deleteFacultyMember
 }=require('./controllers')
+
 const router = Router()
 router.get('/member',getAllFacultyMembers)
-router.post('/member',addFacultyMember)
+router.post('/members',addFacultyMember)
 router.delete("/member/:id",deleteFacultyMember)
