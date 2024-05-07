@@ -12,20 +12,18 @@ const deleteFacultyMember =async (req,res)=>{
 
 }
 const addFacultyMember =async (req,res)=>{
-    try {
-
-     const userData = req.body
-     console.log(userData);
-     const newD = Blog.creat(userData)
-     res.statuse(200).json()
-    } catch (error) {
-     res.statuse(500).json({message:error})
-    }
- 
+   try {
+      const userData = req.body
+      const newD = await  Blog.create(userData)
+      res.status(200).json({ok: true,newD})
+     } catch (error) {
+      console.log(error);
+      res.status(500).json({message:error})
+     }
  }
  const getAllFacultyMembers =async (req,res)=>{
     try {
-     const users = await Blog.find({})
+     const users = await Blog.find()
      res.statuse(200).json(users)
     } catch (error) {
      

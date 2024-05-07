@@ -11,4 +11,4 @@ router.get('/',getAllFacultyMembers)
 router.post('/',addFacultyMember)
 router.delete("/member/:id",deleteFacultyMember)
 
-module.exports=router
+module.exports = router;

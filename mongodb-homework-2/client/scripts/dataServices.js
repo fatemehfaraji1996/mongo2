@@ -1,4 +1,4 @@
-const baseURL = ''; // Write down the base URL of the created API.
+const baseURL = 'http://localhost:5000'; // Write down the base URL of the created API.
 
 const getAllUser = async () => {
   try {

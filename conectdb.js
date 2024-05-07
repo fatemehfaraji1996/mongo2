@@ -11,7 +11,7 @@ const db = async () => {
 };
 
 
-module.exports = db ;
+module.exports = {db} ;
 
   
  
