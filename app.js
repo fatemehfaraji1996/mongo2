@@ -48,16 +48,6 @@ app.delete('/user/:id',async (req,res)=>{
  })
 
 
-// app.delete('/user:id',async(req,res)=>{
-// try {
-//     await Blog.deleteOne({id:"id"})
-//     res.status(200).json({massage:"deleted"})
-// } catch (error) {
-    
-// }
-// })
-
-
 
 app.listen(5000,()=>{
     console.log('your port is run');
